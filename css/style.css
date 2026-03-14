@@ -1544,6 +1544,10 @@ img {
 	color: #00E175;
 }
 
+.icon-fill{
+	filter: brightness(0) saturate(100%) invert(51%) sepia(11%) saturate(5407%) hue-rotate(326deg) brightness(100%) contrast(86%);
+}
+
 @supports (-webkit-background-clip: text) {
 	.icon-gradient-1 {
 		background: linear-gradient(228.54deg, #EE5858 30.16%, #5656DF 89.45%);
@@ -4533,7 +4537,7 @@ html [class*='section-'].section-bottom-0 {
 	z-index: 1;
 }
 
-@keyframes bunner-img {
+@keyframes bunner-img1 {
 	0% {
 		transform: rotate(0deg);
 	}
