@@ -26,7 +26,8 @@
 			rdInputLabel: $(".form-label"),
 			regula: $("[data-constraints]"),
 			wow: $(".wow")
-		};
+		},
+		currentModal = "welcomeModal";
 
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
@@ -469,11 +470,11 @@
 
 		// Modal Window - Show on page load
 		(function initializeModal() {
-			var modal = document.getElementById('welcomeModal');
+			var modal = document.getElementById(currentModal);
 			var modalClose = document.getElementById('modalClose');
 			var modalAction = document.getElementById('modalAction');
 			var modalDontShow = document.getElementById('modalDontShow');
-			var storageKey = 'modalDontShowUntil';
+			var storageKey = currentModal+'modalDontShowUntil';
 
 			/**
 			 * Set a value in localStorage with an expiration date
